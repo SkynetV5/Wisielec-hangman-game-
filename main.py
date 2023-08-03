@@ -9,11 +9,9 @@ print("3.Zobacz ostatnie wyniki.")
 print("4.Zakończ.")
 print("Wybierz opcje (1-4)")
 choice = int(input())
-if choice < 1 or choice > 4:
-    while choice < 1 or choice > 4:
-        print("Wybierz odpowiednią liczbe z menu!")
-        choice = int(input())
 while(choice != 4):
+    if choice < 1 or choice > 4:
+        print("Zła wartość!!!")
     if choice == 1:
         play()
     if choice == 2:
@@ -27,5 +25,3 @@ while(choice != 4):
     print("4.Zakończ.")
     print("Wybierz opcje (1-4)")
     choice = int(input())
-    if choice < 1 or choice > 4:
-        print("Zła wartość!!!")
